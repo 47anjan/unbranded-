@@ -48,9 +48,9 @@ const Header = () => {
           <div className="hidden md:block">
             <a
               href="/careers"
-              className="inline-flex items-center justify-center px-6 py-2 border border-transparent text-sm font-medium rounded-full text-white bg-black hover:bg-gray-800 transition-colors duration-200"
+              className="inline-flex items-center justify-center px-6 py-2 border border-transparent text-sm font-medium rounded-full text-white bg-[#21242a] hover:bg-gray-700 transition-colors duration-200"
             >
-              Careers
+              Contact Us
             </a>
           </div>
 

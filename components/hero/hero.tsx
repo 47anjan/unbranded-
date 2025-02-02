@@ -46,8 +46,8 @@ const Hero = () => {
             online presence and thrive.
           </p>
           <div className="flex flex-col items-center md:flex-row gap-4">
-            <button className="px-6 w-full h-fit max-w-48 mx-auto md:mx-0 py-3 border border-[#21242a] rounded-lg   text-lg font-semibold leading-6 text-center whitespace-nowrap transition-colors duration-200 ease-in bg-[#21242a] text-white">
-              Contact Us
+            <button className="px-6 w-full h-fit max-w-48 mx-auto md:mx-0 py-3 border  rounded-lg   text-lg font-semibold leading-6 text-center whitespace-nowrap transition-colors duration-200 ease-in bg-[#21242a] text-white hover:bg-[#21242a]/90">
+              Book a call
             </button>
 
             <div className="hidden sm:flex flex-col items-center justify-center gap-2 align-middle flex-wrap md:flex-row md:items-start">
