@@ -88,13 +88,12 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="block relative min-h-screen">
-        <img
-          src="/hero.webp"
-          alt="Modern office space with wooden panels and built-in shelving"
-          className="absolute inset-0 w-full h-full object-cover"
-        />
-      </div>
+      <div
+        style={{
+          backgroundPositionX: "50%",
+        }}
+        className="block relative bg-hero bg-cover bg-no-repeat min-h-screen "
+      ></div>
     </section>
   );
 };

@@ -13,7 +13,7 @@ const Header = () => {
           <div className="flex items-center gap-8">
             <div className="flex items-center gap-2">
               <span className="text-xl font-semibold text-gray-900">
-                Unbranded
+                Unbranded<span className="text-[#01e690] text-2xl">.</span>
               </span>
             </div>
 
