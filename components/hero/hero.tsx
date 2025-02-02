@@ -1,5 +1,6 @@
 import { Star } from "lucide-react";
 import Image from "next/image";
+import { BoxReveal } from "../ui/box-reveal";
 
 const imageUrls = [
   "https://qpdwualqgmqaxfgoapyc.supabase.co/storage/v1/object/public/appboilerplate/landingpage/shizai.jpeg?t=2024-09-27T11%3A19%3A21.728Z",
@@ -38,49 +39,58 @@ const Hero = () => {
             </div>
           </div>
 
-          <h1 className="text-3xl leading-snug  sm:text-4xl sm:leading-snug md:text-5xl  font-bold tracking-tight md:leading-snug text-gray-900 mb-4">
-            Authentic Design for a Better User Experience
-          </h1>
-          <p className="text-lg text-gray-600 mb-10 lg:mb-12 max-w-lg">
-            We are a software company facilitating businesses to establish an
-            online presence and thrive.
-          </p>
+          <BoxReveal boxColor={""} duration={0.4}>
+            <h1 className="text-3xl leading-snug  sm:text-4xl sm:leading-snug md:text-5xl  font-bold tracking-tight md:leading-snug text-gray-900 mb-4">
+              Authentic Design for a Better User Experience
+            </h1>
+          </BoxReveal>
+          <BoxReveal boxColor={""} duration={0.4}>
+            <p className="text-lg text-gray-600 mb-10 lg:mb-12 max-w-lg">
+              We are a software company facilitating businesses to establish an
+              online presence and thrive.
+            </p>
+          </BoxReveal>
           <div className="flex flex-col items-center md:flex-row gap-4">
-            <button className="px-6 w-full h-fit max-w-48 mx-auto md:mx-0 py-3 border  rounded-lg   text-lg font-semibold leading-6 text-center whitespace-nowrap transition-colors duration-200 ease-in bg-[#21242a] text-white hover:bg-[#21242a]/90">
-              Book a call
-            </button>
-
-            <div className="hidden sm:flex flex-col items-center justify-center gap-2 align-middle flex-wrap md:flex-row md:items-start">
-              <div className="z-10 flex  -space-x-4 rtl:space-x-reverse">
-                {imageUrls.map((url, index) => (
-                  <Image
-                    key={index}
-                    className="h-12 w-12 rounded-full border-2 border-white dark:border-gray-800 object-cover"
-                    src={url}
-                    width={60}
-                    height={60}
-                    alt={`Avatar ${index + 1}`}
-                  />
-                ))}
-              </div>
-              <div className="flex flex-col  gap-1 items-center md:items-start">
-                <div className="font-semibold text-sm">127+ Happy Clients</div>
-                <div className="flex gap-1">
-                  <Star className="h-4 w-4 fill-orange-400 text-orange-400" />
-                  <Star className="h-4 w-4 fill-orange-400 text-orange-400" />
-                  <Star className="h-4 w-4 fill-orange-400 text-orange-400" />
-                  <Star className="h-4 w-4 fill-orange-400 text-orange-400" />
-                  <Star className="h-4 w-4 fill-orange-400 text-orange-400" />
+            <BoxReveal boxColor={"#5046e6"} duration={0.5}>
+              <button className="px-6 w-full h-fit max-w-48 mx-auto md:mx-0 py-3 border  rounded-lg   text-lg font-semibold leading-6 text-center whitespace-nowrap transition-colors duration-200 ease-in bg-[#21242a] text-white hover:bg-[#21242a]/90">
+                Book a call
+              </button>
+            </BoxReveal>
+            <BoxReveal boxColor={""} duration={0.6}>
+              <div className="hidden sm:flex flex-col items-center justify-center gap-2 align-middle flex-wrap md:flex-row md:items-start">
+                <div className="z-10 flex  -space-x-4 rtl:space-x-reverse">
+                  {imageUrls.map((url, index) => (
+                    <Image
+                      key={index}
+                      className="h-12 w-12 rounded-full border-2 border-white dark:border-gray-800 object-cover"
+                      src={url}
+                      width={60}
+                      height={60}
+                      alt={`Avatar ${index + 1}`}
+                    />
+                  ))}
+                </div>
+                <div className="flex flex-col  gap-1 items-center md:items-start">
+                  <div className="font-semibold text-sm">
+                    127+ Happy Clients
+                  </div>
+                  <div className="flex gap-1">
+                    <Star className="h-4 w-4 fill-orange-400 text-orange-400" />
+                    <Star className="h-4 w-4 fill-orange-400 text-orange-400" />
+                    <Star className="h-4 w-4 fill-orange-400 text-orange-400" />
+                    <Star className="h-4 w-4 fill-orange-400 text-orange-400" />
+                    <Star className="h-4 w-4 fill-orange-400 text-orange-400" />
+                  </div>
                 </div>
               </div>
-            </div>
+            </BoxReveal>
           </div>
         </div>
       </div>
 
       <div className="block relative min-h-screen">
         <img
-          src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&q=240"
+          src="/hero.webp"
           alt="Modern office space with wooden panels and built-in shelving"
           className="absolute inset-0 w-full h-full object-cover"
         />
