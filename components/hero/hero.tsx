@@ -92,7 +92,7 @@ const Hero = () => {
         style={{
           backgroundPositionX: "50%",
         }}
-        className="block relative bg-hero bg-cover bg-no-repeat min-h-screen "
+        className="block relative bg-hero bg-cover bg-no-repeat min-h-[50vh] md:min-h-screen "
       ></div>
     </section>
   );
