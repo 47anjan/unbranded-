@@ -20,7 +20,7 @@ const Footer = () => {
 
   return (
     <footer className="bg-white py-16">
-      <div className="pb-16 max-w-screen-xl mx-auto px-4">
+      <div className="pb-16 px-4 sm:px-6 lg:px-8 xl:px-16 max-w-2xl lg:max-w-none mx-auto">
         <Image
           width={1440}
           height={1440}
@@ -29,7 +29,7 @@ const Footer = () => {
           src="/footer.webp"
         />
       </div>
-      <div className="max-w-screen-xl mx-auto px-4 ">
+      <div className="px-4 sm:px-6 lg:px-8 xl:px-16 max-w-2xl lg:max-w-none mx-auto ">
         <div className=" flex flex-col md:flex-row gap-10 md:gap-0 justify-between mb-16">
           <div className="flex items-start gap-2 mb-4">
             <Link href="/" className="text-2xl font-semibold text-gray-900">

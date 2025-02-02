@@ -32,8 +32,8 @@ const servicesData = [
 
 const Services = () => {
   return (
-    <section className="py-24 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-screen-xl px-4 mx-auto">
+    <section className="py-24 ">
+      <div className="px-4 sm:px-6 lg:px-8 xl:px-16 max-w-2xl lg:max-w-none mx-auto">
         <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 mb-16">
           <h2 className="text-4xl sm:text-5xl font-bold text-gray-900">
             Our Services
