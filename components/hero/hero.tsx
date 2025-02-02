@@ -11,7 +11,7 @@ const imageUrls = [
 
 const Hero = () => {
   return (
-    <section className="relative gap-10 md:min-h-screen grid grid-cols-1 lg:grid-cols-2">
+    <section className="relative  md:min-h-screen grid grid-cols-1 lg:grid-cols-2">
       <div className="flex flex-col justify-center px-4 sm:px-6 lg:px-8 xl:px-16 max-w-2xl lg:max-w-none mx-auto">
         <div className="lg:max-w-xl pt-24 sm:pt-32 lg:pt-0  text-center md:text-start">
           <div className="flex sm:hidden flex-col items-center justify-center gap-2 align-middle md:flex-row md:items-start mb-2">
@@ -88,12 +88,15 @@ const Hero = () => {
         </div>
       </div>
 
-      <div
-        style={{
-          backgroundPositionX: "50%",
-        }}
-        className="block relative bg-hero bg-cover bg-no-repeat min-h-[50vh] md:min-h-screen "
-      ></div>
+      <div className="flex justify-start">
+        <Image
+          className="w-full h-full mt-5 lg:-ml-10"
+          width={1000}
+          height={1000}
+          src={"/check.svg"}
+          alt=""
+        />
+      </div>
     </section>
   );
 };
