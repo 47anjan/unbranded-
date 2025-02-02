@@ -12,9 +12,9 @@ const Header = () => {
         <div className="flex justify-between h-14 sm:h-16 items-center">
           <div className="flex items-center gap-8">
             <div className="flex items-center gap-2">
-              <span className="text-xl font-semibold text-gray-900">
+              <Link href="/" className="text-xl font-semibold text-gray-900">
                 Unbranded<span className="text-[#01e690] text-2xl">.</span>
-              </span>
+              </Link>
             </div>
 
             <div className="hidden md:flex items-center gap-6">
