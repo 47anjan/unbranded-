@@ -4,12 +4,12 @@ import Link from "next/link";
 const Header = () => {
   return (
     <nav
-      className={`fixed w-full z-50 transition-all duration-300 ${
+      className={`fixed w-full  z-50 transition-all duration-300 ${
         true ? "bg-white shadow-sm" : "bg-white"
       }`}
     >
-      <div className=" mx-auto px-4 sm:px-6 lg:px-10">
-        <div className="flex justify-between h-16 items-center">
+      <div className=" mx-auto   px-4 sm:px-6 lg:px-10">
+        <div className="flex  justify-between h-12 sm:h-16 items-center">
           <div className="flex items-center gap-8">
             <div className="flex items-center gap-2">
               <span className="text-xl font-semibold text-gray-900">
