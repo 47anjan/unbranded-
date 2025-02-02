@@ -29,6 +29,7 @@ const Footer = () => {
           src="/footer.webp"
         />
       </div>
+
       <div className="px-4 sm:px-6 lg:px-8 xl:px-16 max-w-2xl lg:max-w-none mx-auto ">
         <div className=" flex flex-col md:flex-row gap-10 md:gap-0 justify-between mb-16">
           <div className="flex items-start gap-2 mb-4">

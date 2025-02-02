@@ -26,20 +26,13 @@ const Header = () => {
               </Link>
               <div className="relative group">
                 <button className="flex items-center gap-1 text-gray-900 hover:text-gray-600 transition-colors duration-200">
-                  Brands
+                  Projects
                   <ChevronDown size={16} />
                 </button>
               </div>
               <div className="relative group">
                 <button className="flex items-center gap-1 text-gray-900 hover:text-gray-600 transition-colors duration-200">
-                  Company
-                  <ChevronDown size={16} />
-                </button>
-              </div>
-              <div className="relative group">
-                <button className="flex items-center gap-1 text-gray-900 hover:text-gray-600 transition-colors duration-200">
-                  Resources
-                  <ChevronDown size={16} />
+                  About Us
                 </button>
               </div>
             </div>
