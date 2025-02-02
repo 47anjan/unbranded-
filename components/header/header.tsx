@@ -8,8 +8,8 @@ const Header = () => {
         true ? "bg-white shadow-sm" : "bg-white"
       }`}
     >
-      <div className=" mx-auto   px-4 sm:px-6 lg:px-10">
-        <div className="flex  justify-between h-12 sm:h-16 items-center">
+      <div className=" mx-auto px-4 sm:px-6 lg:px-10">
+        <div className="flex justify-between h-14 sm:h-16 items-center">
           <div className="flex items-center gap-8">
             <div className="flex items-center gap-2">
               <span className="text-xl font-semibold text-gray-900">

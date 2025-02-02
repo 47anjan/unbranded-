@@ -12,7 +12,7 @@ const Hero = () => {
   return (
     <section className="relative gap-10 md:min-h-screen grid grid-cols-1 lg:grid-cols-2">
       <div className="flex flex-col justify-center px-4 sm:px-6 lg:px-8 xl:px-16 max-w-2xl lg:max-w-none mx-auto">
-        <div className="lg:max-w-xl pt-20 lg:pt-0  text-center md:text-start">
+        <div className="lg:max-w-xl pt-24 sm:pt-32 lg:pt-0  text-center md:text-start">
           <div className="flex sm:hidden flex-col items-center justify-center gap-2 align-middle md:flex-row md:items-start mb-2">
             <div className="z-10 flex -space-x-2 ">
               {imageUrls.map((url, index) => (
