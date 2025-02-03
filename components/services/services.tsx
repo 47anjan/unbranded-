@@ -11,22 +11,9 @@ const servicesData = [
   },
   {
     icon: Code,
-    title: "Software Engineering",
+    title: "Web Development",
     description:
       "Drive the complex challenges and set the engineering team, crafting innovative software solutions.",
-  },
-  {
-    icon: Brain,
-    title: "Artificial Intelligence",
-    description:
-      "Push the boundaries of AI, developing cutting-edge applications that inspire and innovate.",
-  },
-
-  {
-    icon: Heart,
-    title: "Support",
-    description:
-      "Provide exceptional customer support, ensuring client satisfaction and success.",
   },
 ];
 
