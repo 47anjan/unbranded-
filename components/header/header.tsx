@@ -27,7 +27,11 @@ const Header = () => {
               <div className="relative group">
                 <button className="flex items-center gap-1 text-gray-900 hover:text-gray-600 transition-colors duration-200">
                   Projects
-                  <ChevronDown size={16} />
+                </button>
+              </div>
+              <div className="relative group">
+                <button className="flex items-center gap-1 text-gray-900 hover:text-gray-600 transition-colors duration-200">
+                  Services
                 </button>
               </div>
               <div className="relative group">
