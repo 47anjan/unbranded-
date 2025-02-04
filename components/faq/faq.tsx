@@ -34,13 +34,13 @@ export const faqData = [
 
 const FAQ = () => {
   return (
-    <section className="pt-16 ">
+    <section className="py-16 ">
       <div className="px-4 sm:px-6 lg:px-8 xl:px-16 max-w-2xl lg:max-w-none mx-auto">
         <div className="flex flex-col items-center justify-center space-y-3 ">
-          <h1 className="text-3xl mb-2 leading-snug sm:leading-snug sm:text-5xl font-bold text-center text-gray-900">
+          <h1 className="text-center text-3xl font-semibold lg:text-4xl">
             Frequently Asked Questions
           </h1>
-          <p className="text-center w-full max-w-[670px] text-lg ">
+          <p className="text-center w-full max-w-[670px] text-muted-foreground lg:text-lg ">
             Get answers to the most common questions about our services.
           </p>
         </div>

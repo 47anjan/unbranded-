@@ -36,7 +36,7 @@ const WhyUs = () => {
           <h1 className="text-4xl mb-4 sm:text-5xl font-bold text-center text-gray-900">
             Why Choose Us
           </h1>
-          <p className="text-center w-[670px] text-lg ">
+          <p className="text-center  text-lg text-muted-foreground">
             We are committed to delivering exceptional user experiences,
             pixel-perfect designs, top-notch quality, and dedicated support to
             help you succeed.

@@ -19,13 +19,13 @@ const servicesData = [
 
 const Services = () => {
   return (
-    <section className="py-24 ">
+    <section className="py-16 md:py-24 ">
       <div className="px-4 sm:px-6 lg:px-8 xl:px-16 max-w-2xl lg:max-w-none mx-auto">
         <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 mb-16">
           <h2 className="text-4xl sm:text-5xl font-bold text-gray-900">
             Our Services
           </h2>
-          <p className="text-xl text-gray-600">
+          <p className="text-xl text-muted-foreground">
             Explore diverse areas such as Software Engineering, Design & UX, and
             more, to find where your unique talents can shine and drive impact.
           </p>
