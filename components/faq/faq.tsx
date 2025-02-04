@@ -37,7 +37,7 @@ const FAQ = () => {
     <section className="pt-16 ">
       <div className="px-4 sm:px-6 lg:px-8 xl:px-16 max-w-2xl lg:max-w-none mx-auto">
         <div className="flex flex-col items-center justify-center space-y-3 ">
-          <h1 className="text-3xl mb-2 sm:mb-4 leading-snug sm:leading-snug sm:text-5xl font-bold text-center text-gray-900">
+          <h1 className="text-3xl mb-2 leading-snug sm:leading-snug sm:text-5xl font-bold text-center text-gray-900">
             Frequently Asked Questions
           </h1>
           <p className="text-center w-full max-w-[670px] text-lg ">
@@ -49,10 +49,10 @@ const FAQ = () => {
           <Accordion type="single" collapsible className="w-full space-y-4">
             {faqData.map((faq) => (
               <AccordionItem key={faq.id} value={faq.id} className="border-b">
-                <AccordionTrigger className="text-base font-medium hover:no-underline">
+                <AccordionTrigger className="text-base sm:text-xl font-medium hover:no-underline">
                   {faq.question}
                 </AccordionTrigger>
-                <AccordionContent className="text-muted-foreground">
+                <AccordionContent className="text-muted-foreground text-base sm:text-lg">
                   {faq.answer}
                 </AccordionContent>
               </AccordionItem>
