@@ -40,8 +40,9 @@ const Hero = () => {
           </div>
 
           <BoxReveal boxColor={""} duration={0.5}>
-            <h1 className="text-3xl leading-snug  sm:text-4xl sm:leading-snug md:text-5xl  font-bold tracking-tight md:leading-snug text-gray-900 mb-4">
-              Authentic Design for a Better User Experience
+            <h1 className="text-3xl leading-snug  sm:text-4xl sm:leading-snug md:text-5xl  font-medium tracking-tight md:leading-snug text-gray-900 mb-4">
+              Authentic Design for a Better{" "}
+              <span className="font-bold">User Experience</span>
             </h1>
           </BoxReveal>
           <BoxReveal boxColor={""} duration={0.5}>

@@ -38,7 +38,7 @@ const Footer = () => {
             </Link>
           </div>
 
-          <div className="flex flex-col md:flex-row gap-10 md:gap-0 md:max-w-[50%] w-full md:justify-between">
+          <div className="flex flex-col md:flex-row gap-10 md:gap-0 md:max-w-[45%] w-full md:justify-between">
             {footerSections.map((section, index) => (
               <div key={index}>
                 <h4 className="text-sm font-semibold text-gray-900 mb-4">
