@@ -1,6 +1,5 @@
 import React from "react";
 import { Smile, Ruler, Heart, Headphones } from "lucide-react";
-import Link from "next/link";
 
 const servicesData = [
   {

@@ -1,4 +1,4 @@
-import { Menu, ChevronDown } from "lucide-react";
+import { Menu } from "lucide-react";
 import Link from "next/link";
 
 const Header = () => {

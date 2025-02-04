@@ -1,5 +1,5 @@
 import React from "react";
-import { Code, Palette, Brain, Heart } from "lucide-react";
+import { Code, Palette } from "lucide-react";
 import Link from "next/link";
 
 const servicesData = [
