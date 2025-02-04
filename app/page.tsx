@@ -1,4 +1,5 @@
 import WhyUs from "@/components/about/about";
+import FAQ from "@/components/faq/faq";
 
 import Footer from "@/components/footer/footer";
 import Hero from "@/components/hero/hero";
@@ -11,6 +12,7 @@ export default function Home() {
 
       <WhyUs />
       <Services />
+      <FAQ />
       <Footer />
     </main>
   );
