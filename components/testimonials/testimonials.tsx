@@ -13,6 +13,7 @@ import {
 import Autoplay from "embla-carousel-autoplay";
 
 import { Button } from "../ui/button";
+import { JSX, SVGProps } from "react";
 
 const testimonials = [
   {
@@ -129,7 +130,9 @@ const Testimonials = () => {
 };
 export default Testimonials;
 
-function ChevronLeftIcon(props) {
+function ChevronLeftIcon(
+  props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>
+) {
   return (
     <svg
       {...props}
@@ -148,7 +151,9 @@ function ChevronLeftIcon(props) {
   );
 }
 
-function ChevronRightIcon(props) {
+function ChevronRightIcon(
+  props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>
+) {
   return (
     <svg
       {...props}
