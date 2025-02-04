@@ -1,87 +1,113 @@
-import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
+import { Instagram, Facebook, Twitter, Linkedin } from "lucide-react";
 const Footer = () => {
-  const footerSections = [
-    {
-      title: "Company",
-      links: ["About", "Faq", "Contact"],
-    },
-    {
-      title: "Resources",
-      links: ["Projects", "Services", "Blog"],
-    },
-    {
-      title: "Connect",
-      links: ["Facebook", "LinkedIn", "X (Twitter)"],
-    },
-  ];
-
   return (
-    <footer className="bg-white pb-16 md:pt-10">
-      <div className="pb-16 px-4 sm:px-6 lg:px-8 xl:px-16 max-w-2xl lg:max-w-none mx-auto">
-        <Image
-          width={1440}
-          height={1440}
-          className="w-full "
-          alt="footer"
-          src="/footer.webp"
-        />
+    <footer className="bg-white pb-16 md:pt-10 px-4 sm:px-6 lg:px-8 xl:px-16 max-w-2xl lg:max-w-none mx-auto">
+      <div className="flex flex-col items-center justify-between gap-10 text-center lg:flex-row lg:text-left">
+        <div className="flex w-full max-w-96 shrink flex-col items-center justify-between gap-6 lg:items-start">
+          <div>
+            <span className="flex items-center justify-center gap-4 lg:justify-start">
+              <Link href="/" className="text-3xl font-semibold">
+                Unbranded<span className="text-[#01e690] text-4xl">.</span>{" "}
+              </Link>
+            </span>
+            <p className="mt-6 text-sm text-muted-foreground">
+              A collection of 20+ responsive HTML templates for your startup
+              business or side project.
+            </p>
+          </div>
+          <ul className="flex items-center space-x-6 text-muted-foreground">
+            <li className="font-medium hover:text-[#21242b] transition-colors duration-300">
+              <Link href="#">
+                <Instagram className="size-6" />
+              </Link>
+            </li>
+            <li className="font-medium hover:text-[#21242b] transition-colors duration-300">
+              <Link href="#">
+                <Facebook className="size-6" />
+              </Link>
+            </li>
+            <li className="font-medium hover:text-[#21242b] transition-colors duration-300">
+              <Link href="#">
+                <Twitter className="size-6" />
+              </Link>
+            </li>
+            <li className="font-medium hover:text-[#21242b] transition-colors duration-300">
+              <Link href="#">
+                <Linkedin className="size-6" />
+              </Link>
+            </li>
+          </ul>
+        </div>
+        <div className="grid sm:grid-cols-3 gap-10  lg:gap-20">
+          <div>
+            <h3 className="mb-6 font-bold">Product</h3>
+            <ul className="space-y-4 text-sm text-muted-foreground">
+              <li className="font-medium hover:text-primary transition-colors duration-300">
+                <Link href="#">Overview</Link>
+              </li>
+              <li className="font-medium hover:text-primary transition-colors duration-300">
+                <Link href="#">Pricing</Link>
+              </li>
+              <li className="font-medium hover:text-primary transition-colors duration-300">
+                <Link href="#">Marketplace</Link>
+              </li>
+              <li className="font-medium hover:text-primary transition-colors duration-300">
+                <Link href="#">Features</Link>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 className="mb-6 font-bold">Company</h3>
+            <ul className="space-y-4 text-sm text-muted-foreground">
+              <li className="font-medium hover:text-primary transition-colors duration-300">
+                <Link href="#">About</Link>
+              </li>
+              <li className="font-medium hover:text-primary transition-colors duration-300">
+                <Link href="#">Team</Link>
+              </li>
+              <li className="font-medium hover:text-primary transition-colors duration-300">
+                <Link href="#">Blog</Link>
+              </li>
+              <li className="font-medium hover:text-primary transition-colors duration-300">
+                <Link href="#">Careers</Link>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 className="mb-6 font-bold">Resources</h3>
+            <ul className="space-y-4 text-sm text-muted-foreground">
+              <li className="font-medium hover:text-primary transition-colors duration-300">
+                <Link href="#">Help</Link>
+              </li>
+              <li className="font-medium hover:text-primary transition-colors duration-300">
+                <Link href="#">Sales</Link>
+              </li>
+              <li className="font-medium hover:text-primary transition-colors duration-300">
+                <Link href="#">Advertise</Link>
+              </li>
+              <li className="font-medium hover:text-primary transition-colors duration-300">
+                <Link href="#">Privacy</Link>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
-
-      <div className="px-4 sm:px-6 lg:px-8 xl:px-16 max-w-2xl lg:max-w-none mx-auto ">
-        <div className=" flex flex-col md:flex-row gap-10 md:gap-0 justify-between mb-16">
-          <div className="flex items-start gap-2 ">
-            <Link href="/" className="text-2xl font-semibold text-gray-900">
-              Unbranded<span className="text-[#01e690] text-2xl">.</span>
-            </Link>
-          </div>
-
-          <div className="flex flex-col md:flex-row gap-10 md:gap-0 md:max-w-[45%] w-full md:justify-between">
-            {footerSections.map((section, index) => (
-              <div key={index}>
-                <h4 className="text-sm font-semibold text-gray-900 mb-4">
-                  {section.title}
-                </h4>
-                <ul className="space-y-2">
-                  {section.links.map((link, linkIndex) => (
-                    <li key={linkIndex}>
-                      <a
-                        href="#"
-                        className="text-sm text-gray-800 hover:text-gray-900 transition-colors duration-200"
-                      >
-                        {link}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        <div className="border-t border-gray-200 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-sm text-gray-600 mb-4 md:mb-0">
-            © 2025 Unbranded. All rights reserved.
-          </p>
-          <div className="flex items-center gap-8">
-            <div className="flex gap-6">
-              <a
-                href="#"
-                className="text-sm text-gray-600 hover:text-gray-900 transition-colors duration-200"
-              >
-                Privacy Policy
-              </a>
-              <a
-                href="#"
-                className="text-sm text-gray-600 hover:text-gray-900 transition-colors duration-200"
-              >
-                Terms of Service
-              </a>
-            </div>
-          </div>
-        </div>
+      <div className="mt-20 flex flex-col justify-between gap-4 border-t pt-8 text-center text-sm font-medium text-muted-foreground lg:flex-row lg:items-center lg:text-left">
+        <p>
+          © 2024 Unbranded<span className="text-[#01e690]">.</span> All rights
+          reserved.
+        </p>
+        <ul className="flex justify-center gap-4 lg:justify-start">
+          <li className="hover:text-primary transition-colors duration-300">
+            <Link href="#">Terms and Conditions</Link>
+          </li>
+          <li className="hover:text-primary transition-colors duration-300">
+            <Link href="#">Privacy Policy</Link>
+          </li>
+        </ul>
       </div>
     </footer>
   );
