@@ -30,13 +30,13 @@ const servicesData = [
 
 const WhyUs = () => {
   return (
-    <section className="pt-24 ">
+    <section className="pt-16 ">
       <div className="px-4 sm:px-6 lg:px-8 xl:px-16 max-w-2xl lg:max-w-none mx-auto">
-        <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 mb-10 sm:mb-16">
-          <h2 className="text-4xl sm:text-5xl font-bold text-gray-900">
+        <div className="flex flex-col items-center justify-center space-y-3 mb-16">
+          <h1 className="text-4xl mb-4 sm:text-5xl font-bold text-center text-gray-900">
             Why Choose Us
-          </h2>
-          <p className="text-xl text-gray-600">
+          </h1>
+          <p className="text-center w-[670px] text-lg ">
             We are committed to delivering exceptional user experiences,
             pixel-perfect designs, top-notch quality, and dedicated support to
             help you succeed.
@@ -53,7 +53,7 @@ const WhyUs = () => {
                 <div>
                   <div className="mb-6 flex items-center gap-3">
                     <service.icon
-                      className="h-6 w-6 text-green-500 "
+                      className="h-6 w-6 text-green-600 "
                       strokeWidth={2}
                     />
                     <h3 className="text-2xl text-nowrap font-semibold text-gray-900 ">
