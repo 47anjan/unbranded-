@@ -47,7 +47,7 @@ const testimonials = [
 
 const Testimonials = () => {
   return (
-    <div className="px-4 sm:px-6 py-16 md:py-24 lg:px-8 xl:px-16 max-w-2xl lg:max-w-none mx-auto">
+    <div className="px-4 sm:px-6 py-16 md:py-24 lg:px-8 xl:px-16  max-w-screen-2xl mx-auto">
       <div className="flex flex-col items-center gap-4">
         <div className="flex items-center gap-1 text-sm font-semibold">
           <Zap className="h-6 w-auto fill-gray-600 text-gray-600" />

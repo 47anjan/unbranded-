@@ -31,7 +31,7 @@ const servicesData = [
 const WhyUs = () => {
   return (
     <section className="pt-16 ">
-      <div className="px-4 sm:px-6 lg:px-8 xl:px-16 max-w-2xl lg:max-w-none mx-auto">
+      <div className="px-4 sm:px-6 lg:px-8 xl:px-16   max-w-screen-2xl mx-auto">
         <div className="flex flex-col items-center justify-center space-y-3 mb-16">
           <h1 className="text-4xl mb-4 sm:text-5xl font-bold text-center text-gray-900">
             Why Choose Us

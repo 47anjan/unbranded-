@@ -35,7 +35,7 @@ export const faqData = [
 const FAQ = () => {
   return (
     <section className="py-16 ">
-      <div className="px-4 sm:px-6 lg:px-8 xl:px-16 max-w-2xl lg:max-w-none mx-auto">
+      <div className="px-4 sm:px-6 lg:px-8 xl:px-16  max-w-screen-2xl mx-auto">
         <div className="flex flex-col items-center justify-center space-y-3 ">
           <h1 className="text-center text-3xl font-semibold lg:text-4xl">
             Frequently Asked Questions
