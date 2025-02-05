@@ -25,19 +25,28 @@ const Header = () => {
                 Home
               </Link>
               <div className="relative group">
-                <button className="flex items-center gap-1 text-gray-900 hover:text-gray-600 transition-colors duration-200">
+                <Link
+                  href="#projects"
+                  className="flex items-center gap-1 text-gray-900 hover:text-gray-600 transition-colors duration-200"
+                >
                   Projects
-                </button>
+                </Link>
               </div>
               <div className="relative group">
-                <button className="flex items-center gap-1 text-gray-900 hover:text-gray-600 transition-colors duration-200">
+                <Link
+                  href="#services"
+                  className="flex items-center gap-1 text-gray-900 hover:text-gray-600 transition-colors duration-200"
+                >
                   Services
-                </button>
+                </Link>
               </div>
               <div className="relative group">
-                <button className="flex items-center gap-1 text-gray-900 hover:text-gray-600 transition-colors duration-200">
+                <Link
+                  href="#about"
+                  className="flex items-center gap-1 text-gray-900 hover:text-gray-600 transition-colors duration-200"
+                >
                   About Us
-                </button>
+                </Link>
               </div>
             </div>
           </div>
@@ -52,9 +61,12 @@ const Header = () => {
           </div>
 
           <div className="md:hidden">
-            <button className="text-gray-900 hover:text-gray-600 transition-colors duration-200">
+            <Link
+              href="#"
+              className="text-gray-900 hover:text-gray-600 transition-colors duration-200"
+            >
               <Menu size={24} />
-            </button>
+            </Link>
           </div>
         </div>
       </div>
