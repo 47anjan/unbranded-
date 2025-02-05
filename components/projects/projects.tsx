@@ -12,10 +12,10 @@ const Projects = () => {
   return (
     <div
       id="projects"
-      className="px-4 sm:px-6 lg:px-8 xl:px-16  max-w-screen-2xl mx-auto py-16 md:py-24"
+      className="px-4 sm:px-6 lg:px-8 xl:px-16  max-w-screen-2xl mx-auto mb-20  md:mb-28 "
     >
       <div className="w-full h-full">
-        <div className="grid mb-16 lg:grid-cols-2 gap-20  lg:gap-26 ">
+        <div className="grid mb-10 sm:mb-16 lg:grid-cols-2 gap-5  md:gap-16 ">
           <h2 className="text-4xl sm:text-5xl font-bold text-gray-900">
             Our Projects
           </h2>

@@ -47,8 +47,8 @@ const testimonials = [
 
 const Testimonials = () => {
   return (
-    <div className="px-4 sm:px-6 py-16 md:py-24 lg:px-8 xl:px-16  max-w-screen-2xl mx-auto">
-      <div className="flex flex-col items-center gap-4">
+    <div className="px-4 sm:px-6  mb-20  md:mb-28 lg:px-8 xl:px-16  max-w-screen-2xl mx-auto">
+      <div className="flex mb-10 sm:mb-16 flex-col items-center gap-4">
         <div className="flex items-center gap-1 text-sm font-semibold">
           <Zap className="h-6 w-auto fill-gray-600 text-gray-600" />
           Rated 5 stars by 120+ clients
@@ -76,7 +76,7 @@ const Testimonials = () => {
         <CarouselContent>
           {testimonials.map((data, index) => (
             <CarouselItem key={index}>
-              <div className=" mt-20 w-full max-w-screen-lg mx-auto  rounded-2xl   bg-muted p-6 md:p-20">
+              <div className=" w-full max-w-screen-lg mx-auto  rounded-2xl   bg-muted p-6 md:p-20">
                 <div className="mb-6 flex gap-1">
                   {Array(5)
                     .fill(0)

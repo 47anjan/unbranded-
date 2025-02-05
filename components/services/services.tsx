@@ -19,9 +19,9 @@ const servicesData = [
 
 const Services = () => {
   return (
-    <section id="services" className="py-16 md:py-24 ">
-      <div className="px-4 sm:px-6 lg:px-8 xl:px-16  max-w-screen-2xl mx-auto">
-        <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 mb-16">
+    <section id="services" className="">
+      <div className="px-4 sm:px-6 lg:px-8 xl:px-16 mb-20  md:mb-28 max-w-screen-2xl mx-auto">
+        <div className="grid lg:grid-cols-2 gap-5 md:gap-16 mb-10 sm:mb-16">
           <h2 className="text-4xl sm:text-5xl font-bold text-gray-900">
             Our Services
           </h2>

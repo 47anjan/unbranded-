@@ -34,9 +34,9 @@ export const faqData = [
 
 const FAQ = () => {
   return (
-    <section className="py-16 ">
-      <div className="px-4 sm:px-6 lg:px-8 xl:px-16  max-w-screen-2xl mx-auto">
-        <div className="flex flex-col items-center justify-center space-y-3 ">
+    <section className="">
+      <div className="px-4 sm:px-6 lg:px-8 xl:px-16  max-w-screen-2xl mx-auto mb-20  md:mb-28">
+        <div className="flex flex-col mb-10 sm:mb-16 items-center justify-center space-y-3 ">
           <h1 className="text-center text-3xl font-semibold lg:text-4xl">
             Frequently Asked Questions
           </h1>
@@ -45,7 +45,7 @@ const FAQ = () => {
           </p>
         </div>
 
-        <div className="w-full max-w-5xl mx-auto py-12 px-4">
+        <div className="w-full max-w-5xl mx-auto   px-4">
           <Accordion type="single" collapsible className="w-full space-y-4">
             {faqData.map((faq) => (
               <AccordionItem key={faq.id} value={faq.id} className="border-b">
@@ -60,7 +60,7 @@ const FAQ = () => {
           </Accordion>
         </div>
 
-        <div className="mx-auto flex  flex-col items-center rounded-lg bg-accent p-4 text-center md:rounded-xl md:p-6 lg:p-8">
+        <div className="mx-auto flex mt-10 sm:mt-16  flex-col items-center rounded-lg bg-accent p-4 text-center md:rounded-xl md:p-6 lg:p-8">
           <div className="relative">
             <span className="flex shrink-0 overflow-hidden rounded-full absolute mb-4 size-16 origin-bottom -translate-x-[60%] scale-[80%] border md:mb-5">
               <img
