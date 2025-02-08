@@ -1,5 +1,5 @@
 import React from "react";
-import { Smile, Ruler, Heart, Headphones } from "lucide-react";
+import { Smile, Ruler, Heart, Headset } from "lucide-react";
 
 const servicesData = [
   {
@@ -21,7 +21,7 @@ const servicesData = [
       "We prioritize quality in every aspect of our work. From development to deployment, we deliver production-grade applications that meet the highest standards.",
   },
   {
-    icon: Headphones,
+    icon: Headset,
     title: "Dedicated Support",
     description:
       "Our team provides exceptional support, ensuring your needs are met promptly and effectively, including quality revisions, to ensure your needs are met promptly and effectively.",
@@ -43,11 +43,11 @@ const WhyUs = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-1">
+        <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-5">
           {servicesData.map((service, index) => (
             <article
               key={index}
-              className="p-4 sm:p-8 flex flex-col justify-between   "
+              className="p-4 hover:bg-[#f4f4f4] transition-colors duration-300 border sm:p-8 flex rounded-2xl flex-col justify-between   "
             >
               <div className="flex flex-col gap-8">
                 <div>

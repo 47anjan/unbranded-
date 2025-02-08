@@ -1,4 +1,5 @@
 import WhyUs from "@/components/about/about";
+import BookAMeeting from "@/components/book-a-meeting/book-a-meeting";
 import FAQ from "@/components/faq/faq";
 
 import Footer from "@/components/footer/footer";
@@ -15,6 +16,7 @@ export default function Home() {
       <Services />
       <Projects />
       <Testimonials />
+      <BookAMeeting />
       <FAQ />
       <Footer />
     </main>

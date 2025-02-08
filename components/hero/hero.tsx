@@ -1,6 +1,7 @@
 import { Star } from "lucide-react";
 import Image from "next/image";
 import { BoxReveal } from "../ui/box-reveal";
+import MeetingPopupButton from "../book-a-meeting/meeting-popup-button";
 
 const imageUrls = [
   "https://qpdwualqgmqaxfgoapyc.supabase.co/storage/v1/object/public/appboilerplate/landingpage/shizai.jpeg?t=2024-09-27T11%3A19%3A21.728Z",
@@ -53,9 +54,7 @@ const Hero = () => {
           </BoxReveal>
           <div className="flex flex-col items-center md:flex-row gap-4">
             <BoxReveal boxColor={""} duration={0.6}>
-              <button className="px-6 w-full h-fit max-w-48 mx-auto md:mx-0 py-3 border  rounded-lg   text-lg font-semibold leading-6 text-center whitespace-nowrap transition-colors duration-200 ease-in bg-[#21242a] text-white hover:bg-[#21242a]/90 ">
-                Book a call
-              </button>
+              <MeetingPopupButton />
             </BoxReveal>
           </div>
         </div>
