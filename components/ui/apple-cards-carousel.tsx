@@ -14,7 +14,6 @@ import Image, { ImageProps } from "next/image";
 import { useOutsideClick } from "@/hooks/use-outside-click";
 import { Link2 } from "lucide-react";
 import Link from "next/link";
-import { BlurFade } from "../magicui/blur-fade";
 
 interface CarouselProps {
   items: JSX.Element[];
