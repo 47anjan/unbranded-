@@ -22,13 +22,13 @@ const Services = () => {
   return (
     <section id="services" className="">
       <div className="px-4 sm:px-6 lg:px-8 xl:px-16 mb-20  md:mb-28 max-w-screen-2xl mx-auto">
-        <div className="grid lg:grid-cols-2 gap-5 md:gap-16 mb-10 sm:mb-16">
+        <div className="grid  gap-5  mb-10 sm:mb-16">
           <h2 className="text-4xl sm:text-5xl font-bold text-gray-900">
             <TextAnimate animation="blurInUp" by="character">
               Our Services
             </TextAnimate>
           </h2>
-          <p className="text-xl text-muted-foreground">
+          <p className="text-xl max-w-[640px] text-muted-foreground">
             Explore diverse areas such as Software Engineering, Design & UX, and
             more, to find where your unique talents can shine and drive impact.
           </p>
