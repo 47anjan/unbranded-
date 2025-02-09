@@ -53,9 +53,7 @@ export const ProjectGrid = ({ items }: CarouselProps) => {
     >
       <div className="relative w-full">
         <div className="flex w-full  py-10  scroll-smooth" ref={carouselRef}>
-          <div
-            className={cn("w-full grid grid-cols-1 sm:grid-cols-2 gap-4 pl-4")}
-          >
+          <div className={cn("w-full grid grid-cols-1 sm:grid-cols-2 gap-4 ")}>
             {items.map((item, index) => (
               <motion.div
                 initial={{
