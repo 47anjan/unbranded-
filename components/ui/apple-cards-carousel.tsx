@@ -56,28 +56,26 @@ export const ProjectGrid = ({ items }: CarouselProps) => {
         <div className="flex w-full  py-10  scroll-smooth" ref={carouselRef}>
           <div className={cn("w-full grid grid-cols-1 sm:grid-cols-2 gap-4 ")}>
             {items.map((item, index) => (
-              <BlurFade key={index} delay={0.25 + index * 0.05} inView>
-                <motion.div
-                  initial={{
-                    opacity: 0,
-                    y: 20,
-                  }}
-                  animate={{
-                    opacity: 1,
-                    y: 0,
-                    transition: {
-                      duration: 0.5,
-                      delay: 0.2 * index,
-                      ease: "easeOut",
-                      once: true,
-                    },
-                  }}
-                  key={"card" + index}
-                  className="  rounded-3xl"
-                >
-                  {item}
-                </motion.div>
-              </BlurFade>
+              <motion.div
+                initial={{
+                  opacity: 0,
+                  y: 20,
+                }}
+                animate={{
+                  opacity: 1,
+                  y: 0,
+                  transition: {
+                    duration: 0.5,
+                    delay: 0.2 * index,
+                    ease: "easeOut",
+                    once: true,
+                  },
+                }}
+                key={"card" + index}
+                className="  rounded-3xl"
+              >
+                {item}
+              </motion.div>
             ))}
           </div>
         </div>
