@@ -111,7 +111,7 @@ const defaultItemAnimationVariants: Record<
         y: 0,
         transition: {
           delay,
-          duration: 0.3,
+          duration: 0.5,
         },
       }),
       exit: {
