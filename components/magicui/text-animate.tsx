@@ -365,6 +365,7 @@ export function TextAnimate({
       <MotionComponent
         variants={finalVariants.container}
         initial="hidden"
+        viewport={{ once }}
         whileInView={startOnView ? "show" : undefined}
         animate={startOnView ? undefined : "show"}
         exit="exit"
