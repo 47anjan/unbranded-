@@ -14,6 +14,7 @@ import Image, { ImageProps } from "next/image";
 import { useOutsideClick } from "@/hooks/use-outside-click";
 import { Link2 } from "lucide-react";
 import Link from "next/link";
+import { BlurFade } from "../magicui/blur-fade";
 
 interface CarouselProps {
   items: JSX.Element[];
@@ -55,26 +56,28 @@ export const ProjectGrid = ({ items }: CarouselProps) => {
         <div className="flex w-full  py-10  scroll-smooth" ref={carouselRef}>
           <div className={cn("w-full grid grid-cols-1 sm:grid-cols-2 gap-4 ")}>
             {items.map((item, index) => (
-              <motion.div
-                initial={{
-                  opacity: 0,
-                  y: 20,
-                }}
-                animate={{
-                  opacity: 1,
-                  y: 0,
-                  transition: {
-                    duration: 0.5,
-                    delay: 0.2 * index,
-                    ease: "easeOut",
-                    once: true,
-                  },
-                }}
-                key={"card" + index}
-                className="  rounded-3xl"
-              >
-                {item}
-              </motion.div>
+              <BlurFade key={index} delay={0.25 + index * 0.05} inView>
+                <motion.div
+                  initial={{
+                    opacity: 0,
+                    y: 20,
+                  }}
+                  animate={{
+                    opacity: 1,
+                    y: 0,
+                    transition: {
+                      duration: 0.5,
+                      delay: 0.2 * index,
+                      ease: "easeOut",
+                      once: true,
+                    },
+                  }}
+                  key={"card" + index}
+                  className="  rounded-3xl"
+                >
+                  {item}
+                </motion.div>
+              </BlurFade>
             ))}
           </div>
         </div>

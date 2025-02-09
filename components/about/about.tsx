@@ -1,5 +1,6 @@
 import React from "react";
 import { Smile, Ruler, Heart, Headset } from "lucide-react";
+import { BlurFade } from "../magicui/blur-fade";
 
 const servicesData = [
   {
@@ -45,28 +46,30 @@ const WhyUs = () => {
 
         <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-5">
           {servicesData.map((service, index) => (
-            <article
-              key={index}
-              className="p-4 hover:bg-[#f4f4f4] transition-colors duration-300 border sm:p-8 flex rounded-2xl flex-col justify-between   "
-            >
-              <div className="flex flex-col gap-8">
-                <div>
-                  <div className="mb-6 flex items-center gap-3">
-                    <service.icon
-                      className="h-6 w-6 text-green-600 "
-                      strokeWidth={2}
-                    />
-                    <h3 className="text-2xl text-nowrap font-semibold text-gray-900 ">
-                      {service.title}
-                    </h3>
-                  </div>
+            <BlurFade key={index} delay={0.3 + index * 0.05} inView>
+              <article
+                key={index}
+                className="p-4 hover:bg-[#f4f4f4] transition-colors duration-300 border sm:p-8 flex rounded-2xl flex-col justify-between   "
+              >
+                <div className="flex flex-col gap-8">
+                  <div>
+                    <div className="mb-6 flex items-center gap-3">
+                      <service.icon
+                        className="h-6 w-6 text-green-600 "
+                        strokeWidth={2}
+                      />
+                      <h3 className="text-2xl text-nowrap font-semibold text-gray-900 ">
+                        {service.title}
+                      </h3>
+                    </div>
 
-                  <p className="text-gray-600 max-w-[430px] text-sm leading-relaxed">
-                    {service.description}
-                  </p>
+                    <p className="text-gray-600 max-w-[430px] text-sm leading-relaxed">
+                      {service.description}
+                    </p>
+                  </div>
                 </div>
-              </div>
-            </article>
+              </article>
+            </BlurFade>
           ))}
         </div>
       </div>

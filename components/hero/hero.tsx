@@ -30,7 +30,7 @@ const Hero = () => {
             </div>
             <div className="flex mt-1 flex-row-reverse justify-center  sm:justify-center sm:flex-col   gap-1 items-center md:items-start">
               <div className="font-semibold text-sm">
-                <span className="font-bold">120+</span> Happy Clients
+                <span className="font-bold ">120+</span> Happy Clients
               </div>
               <div className="flex gap-1">
                 <Star className="h-4 w-4 fill-orange-400 text-orange-400" />
