@@ -4,6 +4,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { TextAnimate } from "../magicui/text-animate";
 
 export const faqData = [
   {
@@ -38,7 +39,9 @@ const FAQ = () => {
       <div className="px-4 sm:px-6 lg:px-8 xl:px-16  max-w-screen-2xl mx-auto mb-20  md:mb-28">
         <div className="flex flex-col mb-10 sm:mb-16 items-center justify-center space-y-3 ">
           <h1 className="text-center text-3xl font-semibold lg:text-4xl">
-            Frequently Asked Questions
+            <TextAnimate animation="blurInUp" by="character">
+              Frequently Asked Questions
+            </TextAnimate>
           </h1>
           <p className="text-center w-full max-w-[670px] text-muted-foreground lg:text-lg ">
             Get answers to the most common questions about our services.

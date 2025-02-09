@@ -1,6 +1,7 @@
 import React from "react";
 import { Smile, Ruler, Heart, Headset } from "lucide-react";
 import { BlurFade } from "../magicui/blur-fade";
+import { TextAnimate } from "../magicui/text-animate";
 
 const servicesData = [
   {
@@ -35,7 +36,9 @@ const WhyUs = () => {
       <div className="px-4 sm:px-6 lg:px-8 xl:px-16  max-w-screen-2xl mx-auto mb-20  md:mb-28">
         <div className="flex flex-col items-center justify-center space-y-3 mb-10 sm:mb-16">
           <h1 className="text-4xl mb-4 sm:text-5xl font-bold text-center text-gray-900">
-            Why Choose Us
+            <TextAnimate animation="blurInUp" by="character">
+              Why Choose Us
+            </TextAnimate>
           </h1>
           <p className="text-center max-w-[640px]  text-lg text-muted-foreground">
             We are committed to delivering exceptional user experiences,

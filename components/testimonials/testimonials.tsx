@@ -14,6 +14,7 @@ import Autoplay from "embla-carousel-autoplay";
 
 import { Button } from "../ui/button";
 import { JSX, SVGProps } from "react";
+import { TextAnimate } from "../magicui/text-animate";
 
 const testimonials = [
   {
@@ -54,7 +55,9 @@ const Testimonials = () => {
           Rated 5 stars by 120+ clients
         </div>
         <h2 className="text-center text-3xl font-semibold lg:text-4xl">
-          Meet our happy clients
+          <TextAnimate animation="blurInUp" by="character">
+            Meet our happy clients
+          </TextAnimate>
         </h2>
         <p className="text-center text-muted-foreground lg:text-lg">
           Join a global network of thought leaders, product developers,

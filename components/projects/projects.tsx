@@ -3,6 +3,7 @@
 import React from "react";
 import { ProjectGrid, Card } from "@/components/ui/apple-cards-carousel";
 import { projects } from "@/lib/data";
+import { TextAnimate } from "../magicui/text-animate";
 
 const Projects = () => {
   const cards = projects.map((card, index) => (
@@ -17,7 +18,9 @@ const Projects = () => {
       <div className="w-full h-full">
         <div className="grid mb-10 sm:mb-16 lg:grid-cols-2 gap-5  md:gap-16 ">
           <h2 className="text-4xl sm:text-5xl font-bold text-gray-900">
-            Our Projects
+            <TextAnimate animation="blurInUp" by="character">
+              Our Projects
+            </TextAnimate>
           </h2>
           <p className="text-xl text-muted-foreground">
             Explore diverse areas such as Software Engineering, Design & UX, and
