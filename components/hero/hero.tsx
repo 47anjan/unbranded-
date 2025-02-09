@@ -12,7 +12,7 @@ const imageUrls = [
 
 const Hero = () => {
   return (
-    <section className="relative  md:min-h-screen grid grid-cols-1 lg:grid-cols-2">
+    <section className="relative bg-[#d7f5dd]  md:min-h-screen grid grid-cols-1 lg:grid-cols-2 mb-20  md:mb-28">
       <div className="flex flex-col justify-center px-4 sm:px-6 lg:px-8 xl:px-16  max-w-screen-2xl mx-auto">
         <div className="lg:max-w-xl pt-24 sm:pt-32 lg:pt-0  text-center md:text-start">
           <div className=" sm:flex   flex-col items-center justify- md:justify-start gap-2 align-middle flex-wrap md:flex-row md:items-start mb-2 md:mb-4">
@@ -29,7 +29,9 @@ const Hero = () => {
               ))}
             </div>
             <div className="flex mt-1 flex-row-reverse justify-center  sm:justify-center sm:flex-col   gap-1 items-center md:items-start">
-              <div className="font-semibold text-sm">127+ Happy Clients</div>
+              <div className="font-semibold text-sm">
+                <span className="font-bold">120+</span> Happy Clients
+              </div>
               <div className="flex gap-1">
                 <Star className="h-4 w-4 fill-orange-400 text-orange-400" />
                 <Star className="h-4 w-4 fill-orange-400 text-orange-400" />

@@ -1,11 +1,17 @@
+"use client";
+
+import useScroll from "@/hooks/use-scroll";
 import { Menu } from "lucide-react";
 import Link from "next/link";
 
 const Header = () => {
+  const scroll = useScroll();
+  const scrollDir = scroll.y > 80 ? "down" : "up";
+
   return (
     <nav
-      className={`fixed w-full  z-50 transition-all duration-300 ${
-        true ? "bg-white shadow-sm" : "bg-white"
+      className={`fixed w-full z-50 transition-all will-change-auto duration-300 ${
+        scrollDir === "down" ? "bg-white pt-0" : "bg-transparent pt-5"
       }`}
     >
       <div className=" mx-auto px-4 sm:px-6 lg:px-10">
