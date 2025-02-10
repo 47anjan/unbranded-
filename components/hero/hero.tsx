@@ -2,6 +2,7 @@ import { Star } from "lucide-react";
 import Image from "next/image";
 import { BoxReveal } from "../ui/box-reveal";
 import MeetingPopupButton from "../book-a-meeting/meeting-popup-button";
+import { BlurFade } from "../magicui/blur-fade";
 
 const imageUrls = [
   "https://qpdwualqgmqaxfgoapyc.supabase.co/storage/v1/object/public/appboilerplate/landingpage/shizai.jpeg?t=2024-09-27T11%3A19%3A21.728Z",
@@ -63,13 +64,15 @@ const Hero = () => {
       </div>
 
       <div className="flex justify-start">
-        <Image
-          className="w-full h-full mt-5 lg:-ml-10"
-          width={1000}
-          height={1000}
-          src={"/check.svg"}
-          alt=""
-        />
+        <BlurFade delay={0.5} inView>
+          <Image
+            className="w-full h-full mt-5 lg:-ml-10"
+            width={1000}
+            height={1000}
+            src={"/check.svg"}
+            alt=""
+          />
+        </BlurFade>
       </div>
     </section>
   );
