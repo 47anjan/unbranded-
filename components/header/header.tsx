@@ -11,6 +11,7 @@ import { NavigationMenu, NavigationMenuList } from "../ui/navigation-menu";
 import { Logo } from "./logo";
 import { DesktopMenuItem } from "./desktop-menu-item";
 import { MobileMenuSheet } from "./mobile-menu-sheet";
+import { ScrollProgress } from "../magicui/scroll-progress";
 
 export const Header = ({
   menu = DEFAULT_MENU,
@@ -26,6 +27,7 @@ export const Header = ({
         scrollDir === "down" ? "bg-white pt-0" : "bg-transparent pt-5"
       }`}
     >
+      <ScrollProgress className="top-14 sm:top-16" />
       <div className="">
         <nav className="mx-auto px-4 sm:px-6 lg:px-10 flex h-14 sm:h-16 items-center justify-between lg:flex">
           <div className="flex items-center gap-6">

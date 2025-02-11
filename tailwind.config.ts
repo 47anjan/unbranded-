@@ -76,10 +76,71 @@ export default {
             height: "0",
           },
         },
+
+        "appear-zoom": {
+          "0%": {
+            opacity: "0",
+            transform: "scale(.5)",
+          },
+          "100%": {
+            opacity: "1",
+            transform: "scale(1)",
+          },
+        },
+        "pulse-hover": {
+          "0%": {
+            opacity: "1",
+            transform: "translateY(0)",
+          },
+          "50%": {
+            opacity: "0.5",
+            transform: "translateY(-1rem)",
+          },
+          "100%": {
+            opacity: "1",
+            transform: "translateY(0)",
+          },
+        },
+        hover: {
+          "0%": {
+            transform: "translateY(0) translateX(0)",
+          },
+          "50%": {
+            transform: "translateY(-1rem) translateX(1rem)",
+          },
+          "100%": {
+            transform: "translateY(0) translateX(0)",
+          },
+        },
+        "hover-reverse": {
+          "0%": {
+            transform: "translateY(0) translateX(0)",
+          },
+          "50%": {
+            transform: "translateY(1rem) translateX(1rem)",
+          },
+          "100%": {
+            transform: "translateY(0) translateX(0)",
+          },
+        },
+        "pulse-fade": {
+          "0%": {
+            opacity: "1",
+          },
+          "50%": {
+            opacity: "0.3",
+          },
+          "100%": {
+            opacity: "1",
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        appear: "appear 0.6s forwards ease-out",
+        "appear-zoom": "appear-zoom 0.6s forwards ease-out",
+        "pulse-hover": "pulse-hover 6s cubic-bezier(0.4, 0, 0.6, 1) infinite",
       },
     },
   },
