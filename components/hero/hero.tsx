@@ -51,8 +51,7 @@ const Hero = () => {
           </BoxReveal>
           <BoxReveal boxColor={""} duration={0.5}>
             <p className="text-lg text-gray-600 mb-10 lg:mb-12 max-w-lg">
-              We are a software company facilitating businesses to establish an
-              online presence and thrive.
+            We specialize in crafting high-converting landing pages that captivate audiences, drive growth, and solidify your online presence—so your business doesn’t just exist online, it thrives.
             </p>
           </BoxReveal>
           <div className="flex flex-col items-center md:flex-row gap-4">
