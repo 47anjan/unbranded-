@@ -2,6 +2,7 @@ import React from "react";
 import { Code, Palette } from "lucide-react";
 import Link from "next/link";
 import { TextAnimate } from "../magicui/text-animate";
+import { FadeIn } from "../ui/fade-in";
 
 const servicesData = [
   {
@@ -36,31 +37,33 @@ const Services = () => {
 
         <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-1">
           {servicesData.map((service, index) => (
-            <article
-              key={index}
-              className="p-9 flex flex-col justify-between  min-h-[340px] bg-[#f4f4f4]"
-            >
-              <div className="flex flex-col gap-8">
-                <span className="text-sm">0{index + 1}</span>
-                <div>
-                  <div className="mb-3">
-                    <service.icon className="h-6 w-6 " strokeWidth={1.5} />
-                  </div>
-                  <h3 className="text-2xl mb-6 font-medium text-gray-900 ">
-                    {service.title}
-                  </h3>
-                  <p className="text-gray-600 max-w-[430px] text-sm leading-relaxed">
-                    {service.description}
-                  </p>
-                </div>
-              </div>
-              <Link
-                className="font-medium hover:underline text-gray-700"
-                href="/"
+            <FadeIn key={index}>
+              <article
+                key={index}
+                className="p-9 relative flex flex-col justify-between  min-h-[340px] bg-[#f4f4f4]"
               >
-                Learn more
-              </Link>
-            </article>
+                <div className="flex flex-col gap-8">
+                  <span className="text-sm">0{index + 1}</span>
+                  <div>
+                    <div className="mb-3">
+                      <service.icon className="h-6 w-6 " strokeWidth={1.5} />
+                    </div>
+                    <h3 className="text-2xl mb-6 font-medium text-gray-900 ">
+                      {service.title}
+                    </h3>
+                    <p className="text-gray-600 max-w-[430px] text-sm leading-relaxed">
+                      {service.description}
+                    </p>
+                  </div>
+                </div>
+                <Link
+                  className="font-medium hover:underline text-gray-700"
+                  href="/"
+                >
+                  Learn more
+                </Link>
+              </article>
+            </FadeIn>
           ))}
         </div>
       </div>
