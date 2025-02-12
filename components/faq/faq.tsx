@@ -6,30 +6,48 @@ import {
 } from "@/components/ui/accordion";
 import { TextAnimate } from "../magicui/text-animate";
 
-export const faqData = [
+const faqs = [
   {
-    id: "return-policy",
-    question: "What is the return policy?",
+    id: "item-1",
+    question: "Why is professional landing page design crucial for conversion?",
     answer:
-      "You can return any item within 30 days of purchase for a full refund, provided it is in its original condition.",
+      "In today's competitive digital landscape, your landing page serves as your 24/7 sales team. Our research-backed designs optimize user flow and psychological triggers to convert visitors into customers. We combine conversion-focused strategies with exceptional UX to ensure your page not only looks stunning but drives measurable results.",
   },
   {
-    id: "track-order",
-    question: "How do I track my order?",
+    id: "item-2",
+    question: "Why choose your agency over DIY website builders?",
     answer:
-      "Once your order ships, you will receive a tracking number via email. You can use this number on our website or the carrier's website to track your package.",
+      "While DIY tools offer temporary convenience, they often result in generic designs with poor performance and accessibility issues. Our custom solutions are built on industry best practices with mobile-first responsiveness, WCAG compliance, and strategic conversion paths. We handle technical optimization while you maintain full ownership of every pixel we create.",
   },
   {
-    id: "international-shipping",
-    question: "Do you offer international shipping?",
+    id: "item-3",
+    question: "What makes your design process different?",
     answer:
-      "Yes, we offer international shipping to most countries. Shipping rates and delivery times vary by location. You can see the exact costs at checkout.",
+      "Our 360° approach combines user psychology with technical excellence. Every project starts with competitor analysis and user journey mapping. We then prototype multiple variants for A/B testing potential, ensuring your final design isn't just beautiful - it's scientifically optimized for your target audience's behavior patterns.",
   },
   {
-    id: "change-order",
-    question: "Can I change my order after it has been placed?",
+    id: "item-4",
+    question: "Do we own the rights to the designs?",
     answer:
-      "You can modify or cancel your order within 1 hour of placing it. After that, please contact our customer service team for assistance.",
+      "Absolutely. All final assets including source files (Figma/XD), development handoff specs, and copyrights are transferred to you upon project completion. We even include a style guide documentation to ensure brand consistency across future implementations.",
+  },
+  {
+    id: "item-5",
+    question: "How do you ensure accessibility compliance?",
+    answer:
+      "Accessibility is baked into our process from day one. All designs meet WCAG 2.1 AA standards with proper contrast ratios, keyboard navigation flows, and screen reader optimization. We conduct real user testing with assistive technologies to guarantee inclusive experiences.",
+  },
+  {
+    id: "item-6",
+    question: "What support do you provide post-launch?",
+    answer:
+      "Our partnership continues beyond delivery. We offer 30 days of complimentary technical support plus optional retainers for iterative optimization. Receive detailed analytics insights, conversion rate monitoring, and priority revisions to keep your landing page performing at peak efficiency.",
+  },
+  {
+    id: "item-7",
+    question: "Can you work with our existing brand guidelines?",
+    answer:
+      "Yes! We specialize in enhancing established brands while maintaining visual consistency. Our team will audit your current assets and create a system that elevates your identity without alienating existing customers. Perfect for brand refreshes or new product launches.",
   },
 ];
 
@@ -50,7 +68,7 @@ const FAQ = () => {
 
         <div className="w-full max-w-5xl mx-auto   px-4">
           <Accordion type="single" collapsible className="w-full space-y-4">
-            {faqData.map((faq) => (
+            {faqs.map((faq) => (
               <AccordionItem key={faq.id} value={faq.id} className="border-b">
                 <AccordionTrigger className="text-base sm:text-xl font-medium hover:no-underline">
                   {faq.question}
