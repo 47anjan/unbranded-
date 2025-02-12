@@ -5,6 +5,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { TextAnimate } from "../magicui/text-animate";
+import { FadeIn } from "../ui/fade-in";
 
 const faqs = [
   {
@@ -81,43 +82,45 @@ const FAQ = () => {
           </Accordion>
         </div>
 
-        <div className="mx-auto flex mt-10 sm:mt-16  flex-col items-center rounded-lg bg-accent p-4 text-center md:rounded-xl md:p-6 lg:p-8">
-          <div className="relative">
-            <span className="flex shrink-0 overflow-hidden rounded-full absolute mb-4 size-16 origin-bottom -translate-x-[60%] scale-[80%] border md:mb-5">
-              <img
-                className="aspect-square h-full w-full"
-                src="https://library.shadcnblocks.com/images/block/avatar-2.webp"
-                alt="Avatar 2"
-              />
-            </span>
-            <span className="flex shrink-0 overflow-hidden rounded-full absolute mb-4 size-16 origin-bottom translate-x-[60%] scale-[80%] border md:mb-5">
-              <img
-                className="aspect-square h-full w-full"
-                src="https://library.shadcnblocks.com/images/block/avatar-1.webp"
-                alt="Avatar 3"
-              />
-            </span>
-            <span className="relative flex shrink-0 overflow-hidden rounded-full mb-4 size-16 border md:mb-5">
-              <img
-                className="aspect-square h-full w-full"
-                src="https://library.shadcnblocks.com/images/block/avatar-3.webp"
-                alt="Avatar 1"
-              />
-            </span>
+        <FadeIn>
+          <div className="mx-auto flex mt-10 sm:mt-16  flex-col items-center rounded-lg bg-accent p-4 text-center md:rounded-xl md:p-6 lg:p-8">
+            <div className="relative">
+              <span className="flex shrink-0 overflow-hidden rounded-full absolute mb-4 size-16 origin-bottom -translate-x-[60%] scale-[80%] border md:mb-5">
+                <img
+                  className="aspect-square h-full w-full"
+                  src="https://library.shadcnblocks.com/images/block/avatar-2.webp"
+                  alt="Avatar 2"
+                />
+              </span>
+              <span className="flex shrink-0 overflow-hidden rounded-full absolute mb-4 size-16 origin-bottom translate-x-[60%] scale-[80%] border md:mb-5">
+                <img
+                  className="aspect-square h-full w-full"
+                  src="https://library.shadcnblocks.com/images/block/avatar-1.webp"
+                  alt="Avatar 3"
+                />
+              </span>
+              <span className="relative flex shrink-0 overflow-hidden rounded-full mb-4 size-16 border md:mb-5">
+                <img
+                  className="aspect-square h-full w-full"
+                  src="https://library.shadcnblocks.com/images/block/avatar-3.webp"
+                  alt="Avatar 1"
+                />
+              </span>
+            </div>
+            <h3 className="mb-4 max-w-4xl font-bold text-lg md:text-3xl">
+              Save time, money, and headaches
+            </h3>
+            <p className="mb-8 max-w-3xl text-muted-foreground lg:text-lg">
+              Our dedicated support team is here to help you with any questions
+              or concerns. Get in touch with us for personalized assistance.
+            </p>
+            <div className="flex w-full flex-col justify-center gap-2 sm:flex-row">
+              <button className="px-5 w-fit h-fit  mx-auto md:mx-0 py-2 border  rounded-lg  font-semibold leading-6 text-center whitespace-nowrap transition-colors duration-200 ease-in bg-[#21242a] text-white hover:bg-[#21242a]/90 ">
+                Contact Support
+              </button>
+            </div>
           </div>
-          <h3 className="mb-4 max-w-4xl font-bold text-lg md:text-3xl">
-            Save time, money, and headaches
-          </h3>
-          <p className="mb-8 max-w-3xl text-muted-foreground lg:text-lg">
-            Our dedicated support team is here to help you with any questions or
-            concerns. Get in touch with us for personalized assistance.
-          </p>
-          <div className="flex w-full flex-col justify-center gap-2 sm:flex-row">
-            <button className="px-5 w-fit h-fit  mx-auto md:mx-0 py-2 border  rounded-lg  font-semibold leading-6 text-center whitespace-nowrap transition-colors duration-200 ease-in bg-[#21242a] text-white hover:bg-[#21242a]/90 ">
-              Contact Support
-            </button>
-          </div>
-        </div>
+        </FadeIn>
       </div>
     </section>
   );
